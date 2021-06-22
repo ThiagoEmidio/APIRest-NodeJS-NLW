@@ -1,0 +1,40 @@
+import express from "express";
+//@types/express
+const app = express();
+
+/*
+Get = buscar info
+Post = inserir info
+Put = modificar/alterar info
+Delete = remover
+Patch = Alterar informação específica
+*/
+/* 
+
+*TIPOS DE PARAMETROS
+*Route params => http://localhost:3000/product/1209831283
+*Query params => http://localhost:3000/product/?name=teclado&description=tecladobom&
+
+*Body params => {
+    "name": "teclado";
+    "description": "tecladobom";
+}
+no corpo da requisição 
+ */
+
+app.get("/test/{id}",(request,response)=>{
+    // const id = request.params.id;
+
+    
+    //request = tudo que está entrando
+    // response = tudo que está saíndo
+    return response.send("olá nlw get")
+});
+
+app.post("/test-post", (request,response)=>{
+    return response.send("olá nlw post")
+});
+// localhost:3000
+app.listen(3000, ()=> console.log("Server is now running NLW"));
+
+###################################################################
