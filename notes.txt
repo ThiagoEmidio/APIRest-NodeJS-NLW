@@ -38,3 +38,21 @@ app.post("/test-post", (request,response)=>{
 app.listen(3000, ()=> console.log("Server is now running NLW"));
 
 ###################################################################
+
+
+Server> Routes > Controller > service (throw new error)
+
+dava para colocar tudo em try e catch
+
+try{
+    ;;; código
+} catch (err){
+    return response.status(400).json({error: err.message})
+};
+
+##########################################################
+
+O QUE SÃO MIDDWARES?
+    são interceptadoes de requisição. Ou adicionador de info.
+
+
