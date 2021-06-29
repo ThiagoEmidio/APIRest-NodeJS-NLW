@@ -55,4 +55,6 @@ try{
 O QUE SÃO MIDDWARES?
     são interceptadoes de requisição. Ou adicionador de info.
 
+##########################################################
+
 
